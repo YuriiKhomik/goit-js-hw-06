@@ -13,15 +13,19 @@ const ingredients = [
   'Condiments',
 ];
 
+//отримуємо посилання на UL 
 const ingredientsUl = document.querySelector('#ingredients');
 
+// перебираємо масив через map, створюючи на кожній ітерації нову 'li'
 const ingredientsList = ingredients.map(ingredient => {
   const li = document.createElement('li');
   li.textContent = ingredient;
   li.classList.add('item');
   return li
+
 });
 
+// розпилюємо масив li у батьківський ul
 ingredientsUl.append(...ingredientsList);
 
 
