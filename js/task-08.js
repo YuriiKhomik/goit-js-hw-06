@@ -15,7 +15,7 @@ function onFormSubmit(event) {
     const email = formElements.email.value;
     const password = formElements.password.value;
 
-    // якщо полк пусте - виводимо алерт
+    // якщо поле пусте - виводимо алерт
     if (formElements.email.value === '' || formElements.password.value === '') {
         alert('Будь ласка, заповніть всі поля');
         return
