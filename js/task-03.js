@@ -12,3 +12,43 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// отримуємо посилання на батьківський UL
+const galleryContainer = document.querySelector('.gallery');
+
+// будуємо розмітку вмісту UL, використовуючи шаблонні рядки
+const galleryInnerMarkup = ({ url, alt }) => {
+  return `<li><img class="gallery__img" src="${url}" alt="${alt}" width="320" /></li>`
+};
+
+// перебираємо через MAP масив IMAGES на кожній ітерації використовуючи наш шаблон
+const makeGalleryMarkup = images
+  .map(galleryInnerMarkup)
+  // прибираємо пунктуацію
+  .join('');
+
+// вставляємо отриману розмітку в батьківський елемент в HTML
+galleryContainer.insertAdjacentHTML('beforeend', makeGalleryMarkup);
+
+
+
+
+
+
+
+
+
+
+// const galleryImagesCollector = images
+//   .map(image => {
+//     const galleryImg = document.createElement('img');
+//     galleryImg.src = image.url;
+//     galleryImg.alt = image.alt;
+//     return galleryImg;
+//   });
+
+
+
+
+
+
