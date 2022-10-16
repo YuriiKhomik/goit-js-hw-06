@@ -9,10 +9,10 @@ rangeEl.addEventListener('input', onRangeElSlide);
 // функція зміни інлайн стилю на спані
 function onRangeElSlide(event) {
     // змінна приймає числове значення слайдера
-    let size = rangeEl.value;
+    let size = event.currentTarget.value;
     // передаємо це значення в інлайн-стиль тексту
     textEl.style.fontSize = size + 'px';
-}
+};
 
 
 
