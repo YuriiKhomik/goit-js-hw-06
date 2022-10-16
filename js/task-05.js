@@ -8,4 +8,15 @@ inputEl.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
     titleEl.textContent = event.currentTarget.value;
-}
+};
+
+
+
+
+// function onInputChange(event) {
+//     if (event.currentTarget.value !== '') {
+//         titleEl.textContent = event.currentTarget.value;
+//     } else {
+//         titleEl.textContent = 'Anonymous';
+//     };
+// };
