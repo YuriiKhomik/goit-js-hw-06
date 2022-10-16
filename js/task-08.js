@@ -16,10 +16,9 @@ function onFormSubmit(event) {
     const password = formElements.password.value;
 
     // якщо поле пусте - виводимо алерт
-    if (formElements.email.value === '' || formElements.password.value === '') {
-        alert('Будь ласка, заповніть всі поля');
-        return
-    }
+    if (email === '' || password === '') {
+        return alert('Будь ласка, заповніть всі поля');
+    };
     // передаємо дані у об'єкт
     const formData = {
         email,
