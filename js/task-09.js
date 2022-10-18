@@ -24,8 +24,10 @@ function getRandomHexColor() {
 };
 
 function onButtonClick() {
+  const color = getRandomHexColor()
   // додаємо згенероавний рандомний колір в інлайн-стиль елемента body 
-  bodyEl.style.backgroundColor = getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
   // додаємо значення кольору в span
   textEl.textContent = bodyEl.style.backgroundColor;
 };
+
