@@ -28,6 +28,6 @@ function onButtonClick() {
   // додаємо згенероавний рандомний колір в інлайн-стиль елемента body 
   bodyEl.style.backgroundColor = color;
   // додаємо значення кольору в span
-  textEl.textContent = bodyEl.style.backgroundColor;
+  textEl.textContent = color;
 };
 
